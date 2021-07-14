@@ -1,0 +1,49 @@
+:root {
+  /* THEME HEXCODES */
+  --primary-color: #bc986a;
+  --primary-dark-color: #866b54;
+  --primary-light-color: #daad86;
+  --primary-soft-color: #f5d4b6;
+  --primary-blue-color: #659dbd;
+  --primary-blue-dark-color: #2d5569;
+  --primary-blue-light-color: #93c8e7;
+  --primary-blue-soft-color: #c1e7fd;
+  --primary-green-color: #8d8741;
+  --primary-cream-color: hsl(30, 100%, 96%);
+}
+
+* {
+  font-family: "Great Vibes", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: linear-gradient(
+    45deg,
+    var(--primary-light-color),
+    var(--primary-cream-color)
+  );
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-green-color);
+}

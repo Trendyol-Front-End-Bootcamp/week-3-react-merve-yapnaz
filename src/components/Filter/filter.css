@@ -1,0 +1,47 @@
+select {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  padding-left: 15px;
+  font-size: inherit;
+  margin: 20px;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 300px;
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid var(--primary-dark-color);
+}
+
+option {
+  background-color: var(--primary-light-color);
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-green-color);
+}
+
+/*Filter Button*/
+.filterButton {
+  padding: 12px 40px;
+  outline: none;
+  background-color: var(--primary-blue-light-color);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 2px var(--primary-blue-dark-color);
+}
+
+.filterButton:hover {
+  background-color: var(--primary-blue-soft-color);
+}
+
+.filterButton:active {
+  background-color: var(--primary-blue-soft-color);
+  box-shadow: 0 2px var(--primary-blue-dark-color);
+  transform: translateY(2px);
+}
