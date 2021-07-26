@@ -17,8 +17,8 @@ function RickAndMortyService(initial) {
       });
   }
 
-  function getEpisodesByIds(ids) {
-    axios
+  async function getEpisodesByIds(ids) {
+    await axios
       .get("https://rickandmortyapi.com/api/episode/" + ids)
       .then((response) => {
         if (response.data !== null && !Array.isArray(response.data)) {
