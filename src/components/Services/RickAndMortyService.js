@@ -5,8 +5,8 @@ function RickAndMortyService(initial) {
   const [characterList, setCharacterList] = useState(initial);
   const [lastEpisodes, setLastEpisodes] = useState(initial);
 
-  function getCharacterListByUrl(url) {
-    axios
+  async function getCharacterListByUrl(url) {
+    await axios
       .get(url)
       .then((response) => {
         setCharacterList(response.data.results);
